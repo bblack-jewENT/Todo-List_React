@@ -1,4 +1,5 @@
 import "./App.css";
+import { useCounterStore } from "./components/store.ts";
 
 const App = () => {
   const count = useCounterStore((state) => state.count);
