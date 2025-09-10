@@ -8,6 +8,9 @@ const App = () => {
 };
 
 const OtherComponent = ({ count }: { count: number }) => {
+  const increment = useCounterStore((state) => state.increment);
+  const decrement = useCounterStore((state) => state.decrement);
+
   return <div>{count}</div>;
 };
 
